@@ -21,6 +21,7 @@ public class CompleteLevel : MonoBehaviour
     {
         PlayerPrefs.SetInt("levelReached", levelToUnlock);
         sceneFader.FadeTo(nextLevel);
+        GameManager.GameIsOver = false;
     }
 
 }
