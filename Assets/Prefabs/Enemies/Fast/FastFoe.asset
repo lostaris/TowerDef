@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FastFoe
   m_EditorClassIdentifier: 
   name: Fast
-  model: {fileID: 6110774045586946479, guid: 37fd22bcdb9f1e147b0df80fc7286509, type: 3}
+  model: {fileID: 6110774045586946479, guid: e32eb71949369c947a3563f885d24374, type: 3}
   enemy: {fileID: 1417118988982012676, guid: e32eb71949369c947a3563f885d24374, type: 3}
   mat: {fileID: 2100000, guid: 5ee08c09d0870ce49b3e7bf169001ebb, type: 2}
   deathEffect: {fileID: 6677636065964191084, guid: d019ca2f2a129214fb8901dfcfa07389, type: 3}

@@ -24,17 +24,11 @@ public class Enemy : MonoBehaviour
 
     private bool isDead = false;
     
-    private void start()
+    private void Start()
     {
         LoadEnemy(enemyStats);
     }
-   /* public void Awake()
-    {
-        this.health = enemyStats.startHealth;
-        Debug.Log("health is: ");
-        this.speed = enemyStats.startSpeed;
-        this.worth = enemyStats.worth;
-    }*/
+
 
     public void LoadEnemy (EnemyStats data)
     {

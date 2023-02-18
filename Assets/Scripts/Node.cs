@@ -63,7 +63,7 @@ public class Node : MonoBehaviour
         GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
         Destroy(effect, 5f);
 
-        Debug.Log("Turret built");
+        //Debug.Log("Turret built");
     }
 
     public void UpgradeTurret()
@@ -88,7 +88,7 @@ public class Node : MonoBehaviour
         Destroy(effect, 5f);
 
         isUpgraded = true;
-        Debug.Log("Turret built");
+        //Debug.Log("Turret built");
     }
 
     public void SellTurret()
@@ -111,7 +111,7 @@ public class Node : MonoBehaviour
             rend.material.color = hoverColor;
         } else 
         {
-            if(buildable == false) Debug.Log("not buildable");
+            if(buildable == false) //Debug.Log("not buildable");
             rend.material.color = notEnoughMoneyColor;
         }
     }
