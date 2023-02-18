@@ -266,10 +266,8 @@ GameObject:
   - component: {fileID: 2409980768249467581}
   - component: {fileID: 5963620003245501918}
   - component: {fileID: 8270318554552613815}
-  - component: {fileID: 1417118988982012676}
-  - component: {fileID: -8414624016307422324}
   m_Layer: 0
-  m_Name: Tough Enemy
+  m_Name: Fast Enemy 1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -284,7 +282,7 @@ Transform:
   m_GameObject: {fileID: 6110774045586946479}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3, y: 2, z: 8}
-  m_LocalScale: {x: 2.1, y: 2.1, z: 2.1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 32614937}
@@ -319,7 +317,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8913636f105a7d346b4dfe527902aae0, type: 2}
+  - {fileID: 2100000, guid: 5ee08c09d0870ce49b3e7bf169001ebb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -354,34 +352,3 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1417118988982012676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6110774045586946479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97ee553200c5787409f34e9a15e50817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 15
-  startSpeed: 8
-  health: 0
-  deathEffect: {fileID: 6677636065964191084, guid: 77f0528f138e1034dbd039859fa85726, type: 3}
-  model: {fileID: 6110774045586946479}
-  enemyStats: {fileID: 11400000, guid: 6e2a739bce9f1414f8b07c41877f579f, type: 2}
-  healthBar: {fileID: 37804638}
---- !u!114 &-8414624016307422324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6110774045586946479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91a29917854592c44a5e8da60e80bffe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

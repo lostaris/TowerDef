@@ -5,23 +5,53 @@ public class Enemy : MonoBehaviour
 {
     [HideInInspector]
     public float speed;
-    public float startSpeed = 10f;
-    public float startHealth = 100f;
-    private float health;
-    public int worth = 25;
+    [HideInInspector]
+    public float startSpeed;
+    private float startHealth;
 
+    public float health;
+    private int worth = 25;
+
+    [HideInInspector]
     public GameObject deathEffect;
+    [HideInInspector]
+    public GameObject model;
+    [HideInInspector]
+    public EnemyStats enemyStats;
 
     [Header("unity stuff")]
     public Image healthBar;
 
     private bool isDead = false;
-
-    private void Start()
+    
+    private void start()
     {
-        health = startHealth;
-        speed = startSpeed;
+        LoadEnemy(enemyStats);
     }
+   /* public void Awake()
+    {
+        this.health = enemyStats.startHealth;
+        Debug.Log("health is: ");
+        this.speed = enemyStats.startSpeed;
+        this.worth = enemyStats.worth;
+    }*/
+
+    public void LoadEnemy (EnemyStats data)
+    {
+        
+        /*GameObject visuals = Instantiate(data.model);
+        //visuals.transform.SetParent(this.transform);
+        visuals.transform.localPosition = Vector3.zero;
+        visuals.transform.rotation = Quaternion.identity;*/
+
+        this.health = enemyStats.startHealth;
+        this.speed = enemyStats.startSpeed;
+        this.worth = enemyStats.worth;
+        this.deathEffect = enemyStats.deathEffect;
+        this.model = enemyStats.model;
+        Debug.Log("Enemy health=" + health);
+    }
+
 
     public void TakeDamage (float amount)
     {
@@ -44,7 +74,10 @@ public class Enemy : MonoBehaviour
     {
         isDead = true;
         PlayerStats.Money += worth;
-        GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
+        Vector3 pos = this.transform.position;
+        Quaternion rot = transform.rotation;
+        GameObject death = this.deathEffect;
+        GameObject effect = (GameObject)Instantiate(death, pos, rot);
         Destroy(effect, 5f);
 
         WaveSpawner.EnemiesAlive--;

@@ -62,7 +62,10 @@ public class WaveSpawner : MonoBehaviour
 
         for (int i = 0; i < wave.count; i++)
         {
-            SpawnEnemy(wave.enemy);
+            Enemy enemy = wave.enemyStats.enemy;
+            enemy.LoadEnemy(wave.enemyStats);
+            SpawnEnemy(wave.enemyStats.enemy, wave.enemyStats);
+            Debug.Log("Spawning " + wave.enemyStats.name);
             yield return new WaitForSeconds(1/wave.rate);
         }
 
@@ -72,7 +75,7 @@ public class WaveSpawner : MonoBehaviour
         
     }
 
-    void SpawnEnemy(GameObject enemy)
+    void SpawnEnemy(Enemy enemy, EnemyStats enemyStats)
     {
         Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
     }

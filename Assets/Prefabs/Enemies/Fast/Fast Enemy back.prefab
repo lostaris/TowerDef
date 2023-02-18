@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 1417118988982012676}
   - component: {fileID: -8414624016307422324}
   m_Layer: 0
-  m_Name: Fast Enemy
+  m_Name: Fast Enemy back
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -368,9 +368,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   startSpeed: 20
-  startHealth: 25
-  worth: 10
+  health: 0
   deathEffect: {fileID: 6677636065964191084, guid: d019ca2f2a129214fb8901dfcfa07389, type: 3}
+  model: {fileID: 6110774045586946479}
+  enemyStats: {fileID: 11400000, guid: c497814c492b97f4ca9a167fff9c71d3, type: 2}
   healthBar: {fileID: 37804638}
 --- !u!114 &-8414624016307422324
 MonoBehaviour:
