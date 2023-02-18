@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: BasicFoe
   m_EditorClassIdentifier: 
   name: Basic
-  model: {fileID: 6110774045586946479, guid: 8b0df6e59b40ad147a09e876193ed263, type: 3}
-  enemy: {fileID: 1417118988982012676, guid: 8b0df6e59b40ad147a09e876193ed263, type: 3}
+  model: {fileID: 1466764984402591399, guid: c9b41156ed21ad040a04556cf8df1011, type: 3}
+  enemy: {fileID: 4589880699540575662, guid: dc310568251011e449f87c23429b4854, type: 3}
   mat: {fileID: 2100000, guid: 6731c971a78dc3a439668bf674f14db3, type: 2}
-  deathEffect: {fileID: 6677636065964191084, guid: 5fc566a972dd4c1469d30ed9784e3467, type: 3}
+  deathEffect: {fileID: 8707079333338982149, guid: dc310568251011e449f87c23429b4854, type: 3}
   startSpeed: 10
   startHealth: 100
   worth: 25

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a60a06eb868f074c95f789284592dbf, type: 3}
+  m_Name: fasttought
+  m_EditorClassIdentifier: 
+  name: fastTough
+  model: {fileID: 6110774045586946479, guid: dd8418c6136bd00449c448ec466dceee, type: 3}
+  enemy: {fileID: 1417118988982012676, guid: dd8418c6136bd00449c448ec466dceee, type: 3}
+  mat: {fileID: 2100000, guid: 8913636f105a7d346b4dfe527902aae0, type: 2}
+  deathEffect: {fileID: 6677636065964191084, guid: 77f0528f138e1034dbd039859fa85726, type: 3}
+  startSpeed: 7
+  startHealth: 150
+  worth: 50

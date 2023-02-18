@@ -3,20 +3,20 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-    [HideInInspector]
+    //[HideInInspector]
     public float speed;
-    [HideInInspector]
+   // [HideInInspector]
     public float startSpeed;
     private float startHealth;
 
     public float health;
     private int worth = 25;
 
-    [HideInInspector]
+   // [HideInInspector]
     public GameObject deathEffect;
-    [HideInInspector]
+    //[HideInInspector]
     public GameObject model;
-    [HideInInspector]
+    //[HideInInspector]
     public EnemyStats enemyStats;
 
     [Header("unity stuff")]
@@ -43,13 +43,15 @@ public class Enemy : MonoBehaviour
         this.worth = enemyStats.worth;
         this.deathEffect = enemyStats.deathEffect;
         this.model = enemyStats.model;
-        Debug.Log("Enemy health=" + health);
+        //Debug.Log("Enemy health=" + health);
     }
 
 
     public void TakeDamage (float amount)
     {
         health -= amount;
+        Debug.Log("hp left= " + health);
+
 
         healthBar.fillAmount = health / startHealth;
 
