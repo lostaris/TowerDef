@@ -33,11 +33,6 @@ public class Enemy : MonoBehaviour
     public void LoadEnemy (EnemyStats data)
     {
         
-        /*GameObject visuals = Instantiate(data.model);
-        //visuals.transform.SetParent(this.transform);
-        visuals.transform.localPosition = Vector3.zero;
-        visuals.transform.rotation = Quaternion.identity;*/
-
         this.health = enemyStats.startHealth;
         this.speed = enemyStats.startSpeed;
         this.worth = enemyStats.worth;
