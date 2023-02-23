@@ -9637,7 +9637,7 @@ MonoBehaviour:
   missileTurret:
     prefab: {fileID: 9180960997427580100, guid: 627d8bacea6dcc34ba36a53b5b3770c6, type: 3}
     cost: 250
-    upgradedPrefab: {fileID: 1857623196644846506, guid: fc005e8ab00103742ac30745e6750584, type: 3}
+    upgradedPrefab: {fileID: 9180960997427580100, guid: ef15e8a4d9d71ee48b63bde7a290d6d0, type: 3}
     upgradeCost: 150
   laserTurret:
     prefab: {fileID: 3917922317366330197, guid: ddcbdf39abbce45468555c076b138584, type: 3}
@@ -16646,25 +16646,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - enemy: {fileID: 6110774045586946479, guid: 8b0df6e59b40ad147a09e876193ed263, type: 3}
-    count: 1
+  - enemyStats: {fileID: 11400000, guid: 7e2fc48015eb74c43a7d66d6cb0f7d3d, type: 2}
+    count: 2
     rate: 2
-  - enemy: {fileID: 6110774045586946479, guid: 8b0df6e59b40ad147a09e876193ed263, type: 3}
-    count: 5
+  - enemyStats: {fileID: 11400000, guid: c497814c492b97f4ca9a167fff9c71d3, type: 2}
+    count: 3
     rate: 2
-  - enemy: {fileID: 6110774045586946479, guid: 8b0df6e59b40ad147a09e876193ed263, type: 3}
-    count: 10
+  - enemyStats: {fileID: 11400000, guid: 7e2fc48015eb74c43a7d66d6cb0f7d3d, type: 2}
+    count: 3
     rate: 1.5
-  - enemy: {fileID: 6110774045586946479, guid: dd8418c6136bd00449c448ec466dceee, type: 3}
+  - enemyStats: {fileID: 0}
     count: 4
     rate: 1
-  - enemy: {fileID: 6110774045586946479, guid: e32eb71949369c947a3563f885d24374, type: 3}
+  - enemyStats: {fileID: 0}
     count: 15
     rate: 3
-  - enemy: {fileID: 6110774045586946479, guid: 8b0df6e59b40ad147a09e876193ed263, type: 3}
+  - enemyStats: {fileID: 0}
     count: 15
     rate: 4
-  - enemy: {fileID: 6110774045586946479, guid: dd8418c6136bd00449c448ec466dceee, type: 3}
+  - enemyStats: {fileID: 0}
     count: 15
     rate: 4
   spawnPoint: {fileID: 438830136}
@@ -16722,7 +16722,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1040388045}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71b71b56fc923814aadb2a38a26e4bed, type: 3}
+  m_Script: {fileID: 11500000, guid: 4acb073bfc37d194d8059bf0fa418595, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1530503086}
