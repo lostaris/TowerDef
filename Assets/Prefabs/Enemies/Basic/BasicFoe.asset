@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a60a06eb868f074c95f789284592dbf, type: 3}
+  m_Name: BasicFoe
+  m_EditorClassIdentifier: 
+  name: Basic
+  model: {fileID: 1466764984402591399, guid: c9b41156ed21ad040a04556cf8df1011, type: 3}
+  enemy: {fileID: 4589880699540575662, guid: dc310568251011e449f87c23429b4854, type: 3}
+  mat: {fileID: 2100000, guid: 6731c971a78dc3a439668bf674f14db3, type: 2}
+  deathEffect: {fileID: 8707079333338982149, guid: dc310568251011e449f87c23429b4854, type: 3}
+  startSpeed: 10
+  startHealth: 100
+  worth: 25

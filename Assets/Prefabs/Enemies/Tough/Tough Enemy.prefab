@@ -368,9 +368,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   startSpeed: 8
-  startHealth: 350
-  worth: 75
+  health: 0
   deathEffect: {fileID: 6677636065964191084, guid: 77f0528f138e1034dbd039859fa85726, type: 3}
+  model: {fileID: 6110774045586946479}
+  enemyStats: {fileID: 11400000, guid: 6e2a739bce9f1414f8b07c41877f579f, type: 2}
   healthBar: {fileID: 37804638}
 --- !u!114 &-8414624016307422324
 MonoBehaviour:
